@@ -4198,3 +4198,14 @@ Processing by PostsController#show as HTML
 Completed 200 OK in 20ms (Views: 16.7ms | ActiveRecord: 0.3ms)
 
 
+Started GET "/authors/2" for 69.254.174.182 at 2019-08-20 18:01:09 +0000
+Cannot render console from 69.254.174.182! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AuthorsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering authors/show.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."author_id" = ?[0m  [["author_id", 2]]
+  Rendered authors/show.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 19ms (Views: 15.5ms | ActiveRecord: 0.4ms)
+
+
